@@ -1,0 +1,35 @@
+<Setting>
+	<Database>DatabaseChage</Database>
+	<Server>
+		<Path>Lib</Path>
+		<Name>SPatch.jar</Name>
+		<Config>
+			<Path>config/winvest/xml/hks</Path>
+			<ConfigName>
+				<HNX>
+					<XmlFile>ExchangeStatusChecking.xml</XmlFile>
+					<XmlFile>ExchangeStatusCheckingOTC.xml</XmlFile>
+				</HNX>
+				<MarketConfig>
+					<XmlFile>HO.xml</XmlFile>
+					<XmlFile>HA.xml</XmlFile>
+					<XmlFile>OTC.xml</XmlFile>
+				</MarketConfig>
+				<SET>
+					<XmlFile>ExchangeStatusChecking.xml</XmlFile>
+				</SET>
+			</ConfigName>
+		</Config>
+	</Server>
+	<Client>
+		<Path>winvest/tomcat/webapps/wvc/jar</Path>
+		<Name>Patch.jar</Name>
+		<Config>
+			<Path>winvest/tomcat/webapps/wvc/jar</Path>
+			<ConfigName>config.jar</ConfigName>
+		</Config>
+	</Client>
+	<ExceptionMessage>
+		<Path>config/winvest</Path>
+	</ExceptionMessage>
+</Setting>
